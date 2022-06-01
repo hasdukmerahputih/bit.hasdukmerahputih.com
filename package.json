@@ -1,0 +1,28 @@
+{
+  "name": "pages-url-shortener",
+  "version": "1.0.0",
+  "description": "A url shortener that can be hosted on Github Pages",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "./clean.sh",
+    "build": "npm run clean && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funkybunch/pages-url-shortener.git"
+  },
+  "author": "Mark Adkins <mark@bymark.co> (https://markadkins.design)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/funkybunch/pages-url-shortener/issues"
+  },
+  "homepage": "https://github.com/funkybunch/pages-url-shortener#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "dotenv": "^8.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {}
+}
