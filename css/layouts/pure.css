@@ -46,8 +46,6 @@ label {
     text-align: center;
 }
 
-
-
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
@@ -91,7 +89,6 @@ label {
     background: rgb(66, 184, 221); /* this is a light blue */
 }
 
-
 /*
  * -- MENU STYLES --
  * I want to customize how my .pure-menu looks at the top of the page
@@ -131,7 +128,6 @@ label {
     border: none;
     color: #AECFE5;
 }
-
 
 /*
  * -- SPLASH STYLES --
@@ -276,7 +272,6 @@ label {
     .splash-head {
         font-size: 250%;
     }
-
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
