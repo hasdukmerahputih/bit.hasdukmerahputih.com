@@ -1,0 +1,5 @@
+--- 
+layout: redirect 
+target: 'https://safelink.hasdukmerahputih.com/go?to=T0%3DJBPxcmUkcTVSdXVXRXdVJDFSZPTNRVRlRVJGVwVyVEelJVJZJHO1WFU2szE0ZWVFUkT2JUVKJhTjakOUVldtBwTXTDVzFk1ikySaMlY0hk5WFRaHUldk1GxZh6TZbDMHZmIyM1axYVMjlGhjFYc5d2THkE02BjSIUjPWFXJsw%2Fd0bWLmhHVwFydzdGcy1mVzNpbidXbC1WFs1zbydCdGFi1zZvczLWaXBC108xMnbybS9mNvloL1dGaHBXJhttZkdWYXNy5olualbGYWZy9zM6L0cHaHR' 
+time: '0' 
+---
