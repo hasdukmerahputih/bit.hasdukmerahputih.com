@@ -149,7 +149,7 @@ nav {
 
 .header-content img {
     position: relative;
-    right: -5%;
+    display: flex;
 }
 
 .form {
