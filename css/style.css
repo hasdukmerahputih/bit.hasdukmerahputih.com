@@ -497,11 +497,12 @@ nav {
     }
 
     .header-content img {
-        width: 130%;
+        width: 100%;
         position: relative;
-        right: -15%;
+        right: 0%;
         z-index: -1;
         margin-bottom: 40px;
+        max-width: 100%;
     }
 
     .text-content {
