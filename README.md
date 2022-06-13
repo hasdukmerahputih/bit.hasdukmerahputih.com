@@ -1,3 +1,2 @@
-# app
-This site was built using [app aridjaya](https://app.aridjaya.com).
+# Shorter link with [bit hasduk merah putih](https://bit.hasdukmerahputih.com)
 
