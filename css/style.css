@@ -157,7 +157,7 @@ nav {
     align-items: flex-start;
     border-radius: 10px;
     padding: 40px 60px 12px 60px;
-    background: url('images/bg-shorten-desktop.svg') no-repeat, var(--Very-Dark-Blue) no-repeat;
+    background: url('https://bit.hasdukmerahputih.com/images/bg-shorten-desktop.svg') no-repeat, var(--Very-Dark-Blue) no-repeat;
     background-position-x: 100%;
     background-size: cover;
 }
@@ -348,7 +348,7 @@ nav {
 .sub {
     text-align: center;
     padding: 50px 100px;
-    background: url('images/bg-boost-desktop.svg') no-repeat, var(--Dark-Violet);
+    background: url('https://bit.hasdukmerahputih.com/images/bg-boost-desktop.svg') no-repeat, var(--Dark-Violet);
     background-position-x: 100%;
     background-size: 100%;
     color: white;
@@ -524,7 +524,7 @@ nav {
         flex-direction: column;
         align-items: unset;
         padding: 30px;
-        background: url('images/bg-shorten-mobile.svg') no-repeat, var(--Very-Dark-Blue) no-repeat;
+        background: url('https://bit.hasdukmerahputih.com/images/bg-shorten-mobile.svg') no-repeat, var(--Very-Dark-Blue) no-repeat;
         background-position-x: 100%;
         width: unset;
     }
@@ -608,7 +608,7 @@ nav {
 
     .sub {
         padding: 100px 30px;
-        background: url('images/bg-boost-mobile.svg') no-repeat, var(--Dark-Violet);
+        background: url('https://bit.hasdukmerahputih.com/images/bg-boost-mobile.svg') no-repeat, var(--Dark-Violet);
         background-position-x: 100%;
         background-size: 100%;
     }
