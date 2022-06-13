@@ -114,6 +114,7 @@ nav {
 
 .text-content {
     margin-right: 30px;
+    max-width: 30%;
 }
 
 .text-content h1 {
@@ -145,11 +146,14 @@ nav {
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 100px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .header-content img {
     position: relative;
     display: flex;
+    max-width: 70%;
 }
 
 .form {
@@ -299,7 +303,9 @@ nav {
     position: relative;
     border-radius: 10px;
     z-index: 2;
-    width: calc(100%/3);
+    width: 30%;
+    margin: 30px 0;
+    float: left;
 }
 
 .advance .card:nth-of-type(2) {
@@ -334,16 +340,16 @@ nav {
 
 .cards .card:nth-of-type(1),
 .cards .card:nth-of-type(2) {
-    margin-right: 40px;
+    margin-right: 5%;
 }
 
 .line {
     position: absolute;
-    width: 750px;
+    width: 95%;
     height: 7px;
     background-color: var(--Cyan);
-    left: 200px;
-    top: 130px;
+    margin : 0 auto;
+    top: 50%;
     z-index: 1;
 }
 
@@ -504,12 +510,14 @@ nav {
         position: relative;
         right: 0%;
         z-index: -1;
-        margin-bottom: 40px;
+        margin: 0 auto 40px;
         max-width: 100%;
+        float:right;
     }
 
     .text-content {
         margin-right: 0;
+        max-width: 100%;
     }
 
     .text-content h1 {
@@ -593,9 +601,12 @@ nav {
     }
 
     .cards .card:nth-of-type(1),
-    .cards .card:nth-of-type(2) {
+    .cards .card:nth-of-type(2),
+    .cards .card:nth-of-type(3) {
         margin-right: 0;
         margin-bottom: 50px;
+        max-width: 100%;
+        width: 100%;
     }
 
     .card .img {
@@ -604,8 +615,7 @@ nav {
 
     .line {
         transform: rotate(90deg);
-        top: 450px;
-        left: -170px;
+        top: 40%;
     }
 
     .sub {
