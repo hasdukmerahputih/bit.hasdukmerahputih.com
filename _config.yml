@@ -1,1 +1,15 @@
+title: Bit Aridjaya
+description: Aridjaya Short Link Repo
+logo: /assets/logo.png
+show_downloads: false
 theme: jekyll-theme-minimal
+
+permalink: /:slug/
+
+plugins:
+  - jekyll-redirect-from
+  
+collections:
+  urls:
+    output: true
+    permalink: /:slug

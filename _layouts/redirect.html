@@ -1,26 +1,23 @@
----
-layout: default
-title: Redirecting...
-redirect_to:
-time: '0'
----
-
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+{% if site.google_analytics %}
 
-<head>
-  <meta charset="{{ site.encoding }}">
-  <script>
-    location = "{{ page.redirect.to }}"
-  </script>
-  <meta http-equiv="Content-Type" content="text/html;charset={{ site.encoding }}">
-  <meta http-equiv="refresh" content="{{ page.time }}; url={{ page.redirect.to }}" />
-  <meta name="robots" content="noindex">
-  <title>{{ layout.title }}</title>
-</head>
 
-<body>
-  {{ content }}
-</body>
+
+
+
+
+
+{% endif %}
+<meta charset="utf-8">
+<title>Redirecting&hellip;</title>
+<link rel="canonical" href="{{ page.redirect.to }}">
+<script>
+  location = "{{ page.redirect.to }}"
+</script>
+<meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+<meta name="robots" content="noindex">
+<h1>Redirecting&hellip;</h1>
+<a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
 
 </html>

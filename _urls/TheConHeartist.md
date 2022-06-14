@@ -1,5 +1,4 @@
 ---
-layout: redirect
-redirect_to: 'https://safelink.hasdukmerahputih.com/go?to=z09ladVUmblFFVG5vUZWEOW9VpU05d2VGemNXpN16W4ekWnkTl5FMbtVjb0xVhS5vYhM0VmxVpHd3dtZEeTlTZMNITSMGYUhmw991ctbDaHRXIu1vd0bycy1mVzJlb3YXLXFGFsVudubWcm9nZp1lbjZSdGlmFj9wcnbybS9mNvloL1dGaHBXJhttZkdWYXNy5olualbGYWZy9zM6L0cHaHR'
-time: '0'
+title: The Con Heartist
+redirect_to: https://safelink.hasdukmerahputih.com/go?to=%3DPQ%3Dnc9JpWRVVRm51BVhObvWVVDlXVaRtOjdlTmpE0xpOR5OHeVpG05YxTMbVUm92FYNObsYTR1Z3VaRHd5bWTHkE02BjSIUjPWFXJsw%2Fd0bWLmhHVwFydzdGcy1mVzNpbidXbC1WFs1zbydCdGFi1zZvczLWaXBC108xMnbybS9mNvloL1dGaHBXJhttZkdWYXNy5olualbGYWZy9zM6L0cHaHR
 ---

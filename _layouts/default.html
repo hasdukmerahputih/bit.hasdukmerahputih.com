@@ -1,39 +1,46 @@
----
-# Jekyll layout that compresses HTML
-# v3.1.0
-# http://jch.penibelst.de/
-# © 2014–2015 Anatol Broder
-# MIT License
----
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
 
-{% capture _LINE_FEED %}
-{% endcapture %}{% if site.default_html.ignore.envs contains jekyll.environment or site.default_html.ignore.envs == "all" %}{{ content }}{% else %}{% capture _content %}{{ content }}{% endcapture %}{% assign _profile = site.default_html.profile %}{% if site.default_html.endings == "all" %}{% assign _endings = "html head body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " %}{% else %}{% assign _endings = site.default_html.endings %}{% endif %}{% for _element in _endings %}{% capture _end %}
-</{{ _element }}>
-{% endcapture %}{% assign _content = _content | remove: _end %}{% endfor %}{% if _profile and _endings %}{% assign _profile_endings = _content | size | plus: 1 %}{% endif %}{% for _element in site.default_html.startings %}{% capture _start %}
-<{{ _element }}>
-    {% endcapture %}{% assign _content = _content | remove: _start %}{% endfor %}{% if _profile and site.default_html.startings %}{% assign _profile_startings = _content | size | plus: 1 %}{% endif %}{% if site.default_html.comments == "all" %}{% assign _comments = "<!-- -->" | split: " " %}{% else %}{% assign _comments = site.default_html.comments %}{% endif %}{% if _comments.size == 2 %}{% capture _comment_befores %}.{{ _content }}{% endcapture %}{% assign _comment_befores = _comment_befores | split: _comments.first %}{% for _comment_before in _comment_befores %}{% if forloop.first %}{% continue %}{% endif %}{% capture _comment_outside %}{% if _carry %}{{ _comments.first }}{% endif %}{{ _comment_before }}{% endcapture %}{% capture _comment %}{% unless _carry %}{{ _comments.first }}{% endunless %}{{ _comment_outside | split: _comments.last | first }}{% if _comment_outside contains _comments.last %}{{ _comments.last }}{% assign _carry = false %}{% else %}{% assign _carry = true %}{% endif %}{% endcapture %}{% assign _content = _content | remove_first: _comment %}{% endfor %}{% if _profile %}{% assign _profile_comments = _content | size | plus: 1 %}{% endif %}{% endif %}{% assign _pre_befores = _content | split: "<pre" %}{% assign _content = "" %}{% for _pre_before in _pre_befores %}{% assign _pres = _pre_before | split: "</pre>" %}{% assign _pres_after = "" %}{% if _pres.size != 0 %}{% if site.default_html.blanklines %}{% assign _lines = _pres.last | split: _LINE_FEED %}{% capture _pres_after %}{% for _line in _lines %}{% assign _trimmed = _line | split: " " | join: " " %}{% if _trimmed != empty or forloop.last %}{% unless forloop.first %}{{ _LINE_FEED }}{% endunless %}{{ _line }}{% endif %}{% endfor %}{% endcapture %}{% else %}{% assign _pres_after = _pres.last | split: " " | join: " " %}{% endif %}{% endif %}{% capture _content %}{{ _content }}{% if _pre_before contains "</pre>" %}
-    <pre{{ _pres.first }}</pre>{% endif %}{% unless _pre_before contains "</pre>" and _pres.size == 1 %}{{ _pres_after }}{% endunless %}{% endcapture %}{% endfor %}{% if _profile %}{% assign _profile_collapse = _content | size | plus: 1 %}{% endif %}{% if site.default_html.clippings == "all" %}{% assign _clippings = "html head title base link meta style body article section nav aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr blockquote ol ul li dl dt dd figure figcaption main div table caption colgroup col tbody thead tfoot tr td th" | split: " " %}{% else %}{% assign _clippings = site.default_html.clippings %}{% endif %}{% for _element in _clippings %}{% assign _edges = " <e;<e; </e>;</e>;</e> ;</e>" | replace: "e", _element | split: ";" %}{% assign _content = _content | replace: _edges[0], _edges[1] | replace: _edges[2], _edges[3] | replace: _edges[4], _edges[5] %}{% endfor %}{% if _profile and _clippings %}{% assign _profile_clippings = _content | size | plus: 1 %}{% endif %}{{ _content }}{% if _profile %}
-        <table id="default_html_profile_{{ site.time | date: "%Y%m%d" }}" class="default_html_profile">
-        <thead>
-            <tr>
-                <td>Step
-                <td>Bytes
-        <tbody>
-            <tr>
-                <td>raw
-                <td>{{ content | size }}{% if _profile_endings %}
-            <tr>
-                <td>endings
-                <td>{{ _profile_endings }}{% endif %}{% if _profile_startings %}
-            <tr>
-                <td>startings
-                <td>{{ _profile_startings }}{% endif %}{% if _profile_comments %}
-            <tr>
-                <td>comments
-                <td>{{ _profile_comments }}{% endif %}{% if _profile_collapse %}
-            <tr>
-                <td>collapse
-                <td>{{ _profile_collapse }}{% endif %}{% if _profile_clippings %}
-            <tr>
-                <td>clippings
-                <td>{{ _profile_clippings }}{% endif %} </table>{% endif %}{% endif %}
+<head>
+  <meta charset="UTF-8">
+  <base target="_blank">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css'
+    integrity='sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi' rel='stylesheet' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+      <p>
+        {{ site.description | default: site.github.project_tagline }}
+      </p>
+
+
+      <textarea class='form-control' id='textArea' readonly='readonly' rows='11'><script src='https://bit.aridjaya.com/to/safelink.js' type='text/javascript'></script>
+<script type='text/javascript'>
+//<![CDATA[
+protected_links = "aridjaya.com,www.aridjaya.com,blogger.com,bp.blogspot.com,linkedin.com,twitter.com,youtube.com,facebook.com,google.com"; 
+//Simpan domain yang tidak ingin di-encrypted 
+auto_safelink();
+//]]>
+</script></textarea>
+
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer></footer>
+  </div>
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+
+</html>
