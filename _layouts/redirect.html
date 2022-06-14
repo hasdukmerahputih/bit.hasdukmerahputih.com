@@ -1,7 +1,7 @@
 ---
-layout: compress
+layout: default
 title: Redirecting...
-target:
+redirect_to:
 time: '0'
 ---
 
@@ -11,7 +11,7 @@ time: '0'
 <head>
   <meta charset="{{ site.encoding }}">
   <meta http-equiv="Content-Type" content="text/html;charset={{ site.encoding }}">
-  <meta http-equiv="refresh" content="{{ page.time }}; url='{{ page.target }}'" />
+  <meta http-equiv="refresh" content="{{ page.time }}; url='{{ page.redirect_to }}'" />
   <meta name="robots" content="noindex">
   <title>{{ layout.title }}</title>
 </head>
